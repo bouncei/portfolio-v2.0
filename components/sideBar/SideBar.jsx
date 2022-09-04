@@ -1,27 +1,12 @@
 import React from "react";
 import applogo from "../../assets/logo.png";
 import Image from "next/image";
-// import {
-//   Button,
-//   Flex,
-//   useBreakpointValue,
-//   Stack,
-//   Image,
-//   Box,
-// } from "@chakra-ui/react";
-
-// import {
-//   Drawer,
-//   DrawerBody,
-//   DrawerFooter,
-//   DrawerHeader,
-//   DrawerOverlay,
-//   DrawerContent,
-//   DrawerCloseButton,
-// } from "@chakra-ui/react";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 import { Box, Stack, Paper } from "@mui/material";
-import Link from "next/link";
 
 const SideBar = (anchor) => {
   const [state, setState] = React.useState({
@@ -44,6 +29,7 @@ const SideBar = (anchor) => {
     <Box
       sx={{
         width: { sm: 360, md: 550 },
+        height: "100vh",
         // backgroundColor: "#faf8f8",
         // color: "white",
         // height: "100%",
@@ -79,7 +65,7 @@ const SideBar = (anchor) => {
       </div>
 
       <div className="px-10">
-        <ul className="flex flex-col items-start space-y-5 py-7 ">
+        <ul className="flex flex-col items-start space-y-5 py-4 ">
           {navNames.map((item, index) => (
             <li key={index} className="text-lg uppercase hover:border-b">
               <Link href={`/${item.toLowerCase()}`}>{item}</Link>
@@ -88,7 +74,35 @@ const SideBar = (anchor) => {
         </ul>
       </div>
 
-      <div className="mt-auto">sdcnskj</div>
+      <div className="flex items-center justify-between max-w-[300px] m-auto ">
+        <a
+          href="https://www.linkedin.com/in/joshua-inyang-2753841b7/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <FaLinkedinIn />
+          </div>
+        </a>
+        <a href="https://github.com/bouncei" target="_blank" rel="noreferrer">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <FaGithub />
+          </div>
+        </a>
+        <a
+          href="https://twitter.com/InyangJoshua8"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <FaTwitter />
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center border bg-[#fb5858] cursor-pointer hover:bg-[#c55959] text-[#faf8f8] rounded-lg mx-4 mt-10 p-2 font-bold animate-bounce hover:scale-110 ease-in duration-300">
+        HIRE ME
+      </div>
     </Box>
   );
 };

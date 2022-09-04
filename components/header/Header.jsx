@@ -31,7 +31,7 @@ const Header = () => {
     setState({ ...state, [anchor]: open });
   };
 
-  let navNames = ["Home", "About", "Skills", "Projects", "Contacts"];
+  let navNames = ["Home", "About", "Skills", "Projects", "Contact"];
 
   return (
     <div className="fixed w-full h-20 shadow-lg z-100">
