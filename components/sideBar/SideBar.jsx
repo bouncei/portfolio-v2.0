@@ -1,5 +1,5 @@
 import React from "react";
-import applogo from "../../assets/logo.png";
+import applogo from "../../public/assets/logo.png";
 import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -28,7 +28,7 @@ const SideBar = (anchor) => {
   return (
     <Box
       sx={{
-        width: { sm: 360, md: 550 },
+        width: { xs: 200, sm: 300, md: 400 },
         height: "100vh",
         // backgroundColor: "#faf8f8",
         // color: "white",
@@ -40,14 +40,14 @@ const SideBar = (anchor) => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div
-        className="w-full h-64 bg-[url('https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')]"
+        className="w-full h-40 md:h-64 bg-[url('https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')]"
         sx={{
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}
       >
-        <div className="max-w-2xl align-baseline text-[#faf8f8] flex-col p-4 pt-12 text-lg font-black space-x-3 space-y-2">
-          <div className=" relative h-32 w-32">
+        <div className="max-w-2xl align-baseline text-[#faf8f8] flex-col p-2 md:p-4 pt-8 md:pt-12 text-lg font-black space-x-3 space-y-2">
+          <div className=" relative h-20 w-20 md:h-32 md:w-32">
             <Image
               src={applogo}
               alt="Picture of the author"
@@ -57,9 +57,9 @@ const SideBar = (anchor) => {
             />
           </div>
 
-          <div>
+          <div className="text-left text-base md:text-auto">
             <p>Bouncey</p>
-            <p>joshuainyang@255@gmail.com</p>
+            <p className="hidden md:inline">joshuainyang@255@gmail.com</p>
           </div>
         </div>
       </div>
@@ -67,25 +67,28 @@ const SideBar = (anchor) => {
       <div className="px-10">
         <ul className="flex flex-col items-start space-y-5 py-4 ">
           {navNames.map((item, index) => (
-            <li key={index} className="text-lg uppercase hover:border-b">
+            <li
+              key={index}
+              className="text-base md:text-lg uppercase hover:border-b"
+            >
               <Link href={`/${item.toLowerCase()}`}>{item}</Link>
             </li>
           ))}
         </ul>
       </div>
 
-      <div className="flex items-center justify-between max-w-[300px] m-auto ">
+      <div className="flex items-center justify-between max-w-[180px] md:max-w-[259px] lg:max-w-[320px] m-auto ">
         <a
           href="https://www.linkedin.com/in/joshua-inyang-2753841b7/"
           target="_blank"
           rel="noreferrer"
         >
-          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
             <FaLinkedinIn />
           </div>
         </a>
         <a href="https://github.com/bouncei" target="_blank" rel="noreferrer">
-          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
             <FaGithub />
           </div>
         </a>
@@ -94,7 +97,7 @@ const SideBar = (anchor) => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6  cursor-pointer hover:scale-110 ease-in duration-300">
             <FaTwitter />
           </div>
         </a>

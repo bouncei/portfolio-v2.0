@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // import { useColorMode, useDisclosure } from "@chakra-ui/react";
@@ -12,9 +12,23 @@ import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 
 const Header = () => {
   const [sideMenu, setSideMenu] = useState(false);
+  const [navBg] = useState("#faf8f8");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [shadow, setShadow] = useState(false);
   const [state, setState] = React.useState({
     left: false,
   });
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   // const { colorMode, toggleColorMode } = useColorMode();
 
@@ -28,13 +42,21 @@ const Header = () => {
       return;
     }
 
+    setSideMenu(!sideMenu);
     setState({ ...state, [anchor]: open });
   };
 
   let navNames = ["Home", "About", "Skills", "Projects", "Contact"];
 
   return (
-    <div className="fixed w-full h-20 shadow-lg z-100">
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/../public/logo.png"
@@ -46,15 +68,18 @@ const Header = () => {
 
         <div className="">
           {/* NAVIGATION LINKS */}
-          <ul className="hidden md:flex items-center">
+          <ul
+            // style={{ color: `${linkColor}` }}
+            className="hidden md:flex items-center"
+          >
             {navNames.map((item, index) => (
               <li
                 key={index}
                 className="ml-10 text-sm uppercase hover:border-b"
               >
                 <Link
-                  href={`/${
-                    item.toLowerCase() === "home" ? "/" : item.toLowerCase()
+                  href={`/#${
+                    item.toLowerCase() === "home" ? "" : item.toLowerCase()
                   }`}
                 >
                   {item}

@@ -3,6 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
+import ParticlesBg from "../particlesBg/ParticlesBg";
 
 const Hero = () => {
   return (
@@ -36,8 +37,8 @@ const Hero = () => {
             </a>
             <a
               href="https://github.com/bouncei"
-              // target="_blank"
-              // rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />

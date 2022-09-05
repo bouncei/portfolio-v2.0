@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 // PAGE COMPONENTS
-import { Hero, Header } from "../components";
+import { Hero, Header, About, Projects, Skills } from "../components";
 
 const Home = () => {
   return (
@@ -12,9 +12,12 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex">
+      <main>
         <Header />
         <Hero />
+        <About />
+        <Skills />
+        <Projects />
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t"></footer>
