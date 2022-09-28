@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import applogo from "../../public/assets/logo.png";
 import Link from "next/link";
 // import { useColorMode, useDisclosure } from "@chakra-ui/react";
 import Drawer from "@mui/material/Drawer";
@@ -58,7 +59,7 @@ const Header = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/../public/logo.png"
+          src={applogo}
           alt="App Logo"
           width="125"
           height="50"
