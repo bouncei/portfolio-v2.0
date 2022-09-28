@@ -1,7 +1,10 @@
 import { RiRadioButtonFill } from "react-icons/ri";
+import { IoIosArrowRoundBack } from "react-icons/io";
+import { BsCodeSlash } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import dummyData from "../../dummy";
+import { BsLink45Deg, BsEye } from "react-icons/bs";
 
 const Project = ({ name }) => {
   const found = dummyData.find((element) => element.id === name.toLowerCase());
@@ -37,15 +40,21 @@ const Project = ({ name }) => {
         <div className="col-span-4">
           <h2>Overview</h2>
           <br />
-          <p>{found?.overwiew}</p>
-          <a href={found?.repo} target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </a>
-          <a href={found?.demo} target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4">Demo</button>
-          </a>
+          <p className="text-lg">{found?.overwiew}</p>
+          <div className="flex items-center gap-2 ">
+            <a href={found?.repo} target="_blank" rel="noreferrer">
+              <button className="px-4 py-1 mt-4 mr-8 flex items-center gap-2 rounded-lg bg-[#fb5858] font-bold cursor-pointer  hover:opacity-70">
+                <BsCodeSlash /> Code
+              </button>
+            </a>
+            <a href={found?.demo} target="_blank" rel="noreferrer">
+              <button className="px-4 py-1 mt-4 flex items-center gap-2 rounded-lg bg-[#fb5858] font-bold cursor-pointer  hover:opacity-70">
+                <BsLink45Deg /> <p>Demo</p>
+              </button>
+            </a>
+          </div>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
@@ -58,7 +67,10 @@ const Project = ({ name }) => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <button className=" px-4 py-1 rounded-lg bg-[#fb5858] font-bold cursor-pointer  hover:opacity-70 flex items-center justify-center gap-2">
+            <IoIosArrowRoundBack />
+            Back
+          </button>
         </Link>
       </div>
     </div>
