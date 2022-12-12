@@ -103,9 +103,15 @@ const SideBar = (anchor) => {
         </a>
       </div>
 
-      <div class="text-center border bg-[#fb5858] cursor-pointer hover:bg-[#c55959] text-[#faf8f8] rounded-lg mx-4 mt-10 p-2 font-bold animate-bounce hover:scale-110 ease-in duration-300">
-        HIRE ME
-      </div>
+      <a
+        href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=joshuainyang255@gmail.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div class="text-center border bg-[#fb5858] cursor-pointer hover:bg-[#c55959] text-[#faf8f8] rounded-lg mx-4 mt-10 p-2 font-bold animate-bounce hover:scale-110 ease-in duration-300">
+          HIRE ME
+        </div>
+      </a>
     </Box>
   );
 };
