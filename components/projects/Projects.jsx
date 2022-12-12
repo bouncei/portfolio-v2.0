@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 import polygon from "../../public/assets/projects/polygon.png";
 import BaseMint from "../../public/assets/projects/BaseMint.png";
@@ -58,6 +56,12 @@ const Projects = () => {
               />
             ))}
           </div>
+
+          <a href="https://github.com/bouncei" target="_blank" rel="noreferrer">
+            <div class="text-center border bg-[#fb5858] cursor-pointer hover:bg-[#c55959] text-[#faf8f8] rounded-lg mx-4 md:mx-40 mt-10 p-2 font-bold animate-bounce hover:scale-110 ease-in duration-300">
+              See More
+            </div>
+          </a>
         </div>
       </div>
     </div>

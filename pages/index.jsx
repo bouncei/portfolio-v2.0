@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 // PAGE COMPONENTS
-import { Hero, Header, About, Projects, Skills } from "../components";
+import { Hero, Header, About, Projects, Skills, Reviews } from "../components";
 
 const Home = () => {
   return (
@@ -18,6 +18,9 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
+        {/* 
+        <Reviews />
+       */}
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t"></footer>
