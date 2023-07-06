@@ -7,7 +7,7 @@
   body {
     @apply bg-[#faf8f8] text-[#1f2937] tracking-wide;
   }
-
+  
   h1,
   h2,
   h3,
@@ -22,7 +22,7 @@
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-2xl sm:text-4xl;
   }
 
   li {
@@ -32,4 +32,17 @@
   /* button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase text-[#d4d0d0] bg-gradient-to-r from-[#5651e5] to-[#709dff];
   } */
+}
+
+
+ /* .active-scroll-spy {
+  background-color: #fb5858;
+  border-radius: 10px;
+  padding: 5px 7px;
+  color: white;
+  transition-timing-function:  cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
+}  */
+html {
+  scroll-behavior: smooth;
 }

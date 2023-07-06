@@ -71,7 +71,13 @@ const SideBar = (anchor) => {
               key={index}
               className="text-base md:text-lg uppercase hover:border-b"
             >
-              <Link href={`/${item.toLowerCase()}`}>{item}</Link>
+              <Link
+                href={`/#${
+                  item.toLowerCase() === "home" ? "" : item.toLowerCase()
+                }`}
+              >
+                {item}
+              </Link>
             </li>
           ))}
         </ul>
@@ -108,7 +114,7 @@ const SideBar = (anchor) => {
         target="_blank"
         rel="noreferrer"
       >
-        <div class="text-center border bg-[#fb5858] cursor-pointer hover:bg-[#c55959] text-[#faf8f8] rounded-lg mx-4 mt-10 p-2 font-bold animate-bounce hover:scale-110 ease-in duration-300">
+        <div className="text-center border bg-[#fb5858] cursor-pointer hover:bg-[#c55959] text-[#faf8f8] rounded-lg mx-4 mt-10 p-2 font-bold animate-bounce hover:scale-110 ease-in duration-300">
           HIRE ME
         </div>
       </a>

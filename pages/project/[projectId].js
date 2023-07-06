@@ -12,7 +12,7 @@ const Project = ({ name }) => {
   console.log("current Id", found);
 
   return (
-    <div className="w-full">
+    <div className="w-full pt-18">
       <div className="w-screen h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
@@ -22,9 +22,11 @@ const Project = ({ name }) => {
           src={found?.Img}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">{found?.name.toLocaleUpperCase()}</h2>
-          <div className="flex items-center">
+        <div className="absolute top-[70%] max-w-[1240px] dura w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2 font-serif text-[#fb5858]">
+            {found?.name.toLocaleUpperCase()}
+          </h2>
+          <div className="flex items-center text-sm md:text-base 2xl:text-lg">
             {found?.stack.map((item, index) =>
               index === found.stack.length - 1 ? (
                 <h3 key={index}>{item} </h3>
@@ -40,15 +42,15 @@ const Project = ({ name }) => {
         <div className="col-span-4">
           <h2>Overview</h2>
           <br />
-          <p className="text-lg">{found?.overwiew}</p>
-          <div className="flex items-center gap-2 ">
+          <p className=" text-sm md:text-base 2xl:text-lg">{found?.overwiew}</p>
+          <div className="flex items-center text-white  justify-end md:justify-start gap-2 ">
             <a href={found?.repo} target="_blank" rel="noreferrer">
-              <button className="px-4 py-1 mt-4 mr-8 flex items-center gap-2 rounded-lg bg-[#fb5858] font-bold cursor-pointer  hover:opacity-70">
+              <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858]   text-sm md:text-base 2xl:text-lg cursor-pointer  hover:opacity-70">
                 <BsCodeSlash /> Code
               </button>
             </a>
             <a href={found?.demo} target="_blank" rel="noreferrer">
-              <button className="px-4 py-1 mt-4 flex items-center gap-2 rounded-lg bg-[#fb5858] font-bold cursor-pointer  hover:opacity-70">
+              <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858] text-sm md:text-base 2xl:text-lg  cursor-pointer  hover:opacity-70">
                 <BsLink45Deg /> <p>Demo</p>
               </button>
             </a>
@@ -59,7 +61,10 @@ const Project = ({ name }) => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               {found?.technologies.map((item, index) => (
-                <p key={index} className="text-gray-600 py-2 flex items-center">
+                <p
+                  key={index}
+                  className="text-gray-600 text-sm md:text-base 2xl:text-lg py-2 flex items-center"
+                >
                   <RiRadioButtonFill className="pr-1" /> {item}
                 </p>
               ))}
@@ -67,7 +72,7 @@ const Project = ({ name }) => {
           </div>
         </div>
         <Link href="/#projects">
-          <button className=" px-4 py-1 rounded-lg bg-[#fb5858] font-bold cursor-pointer  hover:opacity-70 flex items-center justify-center gap-2">
+          <button className=" text-white px-4 py-1 rounded-lg bg-[#fb5858] font-medium cursor-pointer  hover:opacity-70 flex items-center justify-center gap-2">
             <IoIosArrowRoundBack />
             Back
           </button>

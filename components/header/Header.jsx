@@ -4,6 +4,7 @@ import applogo from "../../public/assets/logo.png";
 import Link from "next/link";
 // import { useColorMode, useDisclosure } from "@chakra-ui/react";
 import Drawer from "@mui/material/Drawer";
+import ActiveLink from "../element/ActiveLinks";
 
 // PAGE COMPONENTS
 import { SideBar } from "../../components";
@@ -51,20 +52,24 @@ const Header = () => {
 
   return (
     <div
-      className={
-        shadow
-          ? "fixed w-full h-16 shadow-xl z-[100] ease-in-out duration-300 bg-[#faf8f8]"
-          : "fixed w-full h-20 z-[100] ease-in-out duration-300 "
-      }
+      className={`
+        ${
+          shadow
+            ? "  w-full shadow-xl z-[100] ease-in-out duration-300 bg-[#faf8f8]"
+            : " w-full   z-[100] ease-in-out duration-300 bg-[#faf8f8]"
+        }
+
+        py-3 h-18 fixed`}
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src={applogo}
-          alt="App Logo"
-          width="125"
-          height="50"
-          className="object-contain rounded-full h-full w-full"
-        />
+      <div className="flex justify-between items-center w-full h-full pr-2 pl-5 2xl:px-16 ">
+        <Link href="/" className="relative w-12 h-12 cursor-pointer ">
+          <Image
+            src={applogo}
+            alt="App Logo"
+            fill
+            className="object-cover w-full h-full  "
+          />
+        </Link>
 
         <div className="">
           {/* NAVIGATION LINKS */}
@@ -77,13 +82,14 @@ const Header = () => {
                 key={index}
                 className="ml-10 text-sm uppercase hover:border-b"
               >
-                <Link
+                <ActiveLink
                   href={`/#${
                     item.toLowerCase() === "home" ? "" : item.toLowerCase()
                   }`}
+                  item={item}
                 >
                   {item}
-                </Link>
+                </ActiveLink>
               </li>
             ))}
 
@@ -103,8 +109,7 @@ const Header = () => {
       </div>
 
       {/* SIDE DRAWER MENU
-    
-      <SideBar isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
+  
     */}
       <Drawer
         anchor="left"

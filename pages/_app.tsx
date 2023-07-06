@@ -1,9 +1,9 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import LoadingScreen from "../components/preloader"
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
-
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import LoadingScreen from "../components/preloader";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { Header } from "../components";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(false);
@@ -18,17 +18,17 @@ function MyApp({ Component, pageProps }: AppProps) {
     router.events.on("routeChangeStart", handleStart);
     router.events.on("routeChangeComplete", handleComplete);
     router.events.on("routeChangeError", handleComplete);
-
-
-  }, [router])
+  }, [router]);
   return (
     <>
-
       <LoadingScreen loading={loading} />
+      <>
+        <Header />
 
-      <Component {...pageProps} />
+        <Component {...pageProps} />
+      </>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

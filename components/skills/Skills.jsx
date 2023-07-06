@@ -19,13 +19,16 @@ import Mongodb from "../../public/assets/skills/mongodb.png";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2 py-10 md:py-0">
-      <div className="max-w-[1250px] mx-auto flex flex-col justify-center h-full ">
+    <div
+      id="skills"
+      className="w-full lg:h-screen p-2 px-5 md:px-10 py-10 md:py-0"
+    >
+      <div className="md:max-w-[80vw] mx-auto flex flex-col justify-center h-full ">
         <p className="text-xl tracking-widest uppercase text-[#fb5858]">
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">

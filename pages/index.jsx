@@ -13,7 +13,6 @@ const Home = () => {
       </Head>
 
       <main>
-        <Header />
         <Hero />
         <About />
         <Skills />
