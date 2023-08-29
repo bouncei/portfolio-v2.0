@@ -44,11 +44,14 @@ const Project = ({ name }) => {
           <br />
           <p className=" text-sm md:text-base 2xl:text-lg">{found?.overwiew}</p>
           <div className="flex items-center text-white  justify-end md:justify-start gap-2 ">
-            <a href={found?.repo} target="_blank" rel="noreferrer">
-              <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858]   text-sm md:text-base 2xl:text-lg cursor-pointer  hover:opacity-70">
-                <BsCodeSlash /> Code
-              </button>
-            </a>
+            {found.repo && (
+              <a href={found?.repo} target="_blank" rel="noreferrer">
+                <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858]   text-sm md:text-base 2xl:text-lg cursor-pointer  hover:opacity-70">
+                  <BsCodeSlash /> Code
+                </button>
+              </a>
+            )}
+
             <a href={found?.demo} target="_blank" rel="noreferrer">
               <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858] text-sm md:text-base 2xl:text-lg  cursor-pointer  hover:opacity-70">
                 <BsLink45Deg /> <p>Demo</p>

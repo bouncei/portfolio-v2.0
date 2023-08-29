@@ -3,6 +3,8 @@ import ProjectItem from "./ProjectItem";
 import polygon from "../../public/assets/projects/polygon.png";
 import BaseMint from "../../public/assets/projects/BaseMint.png";
 import coingecko from "../../public/assets/projects/coingecko.png";
+import ttw from "../../public/assets/projects/ttw.png";
+import npc from "../../public/assets/projects/npc.jpg";
 import def from "../../public/logo.png";
 
 const dummy = [
@@ -14,19 +16,27 @@ const dummy = [
     path: "basemint",
   },
   {
+    title: "National Population Commission (NPC)",
+    bImg: npc,
+    url: "https://nationalpopulation.gov.ng/",
+    tech: "Next Js",
+    path: "npc",
+  },
+  {
+    title: "TrocToWork",
+    bImg: ttw,
+    url: "https://troc-to-work.vercel.app/",
+    tech: "Next Js",
+    path: "ttw",
+  },
+  {
     title: "Polygon Dapp",
     bImg: polygon,
     url: "https://polygon-d-ise7n2ukk-bouncei.vercel.app/",
     tech: "Next JS",
     path: "polygon",
   },
-  {
-    title: "Press Play",
-    bImg: def,
-    url: "#",
-    tech: "React JS",
-    path: "press_play",
-  },
+
   {
     title: "Coingecko Bot",
     bImg: coingecko,
@@ -44,7 +54,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 place-self-center gap-8">
           {dummy.map((item, index) => (
             <ProjectItem
               title={item.title}
