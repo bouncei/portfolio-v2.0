@@ -9,20 +9,19 @@ import def from "../../public/logo.png";
 
 const dummy = [
   {
-    title: "National Population Commission (NPC)",
-    bImg: npc,
-    url: "https://nationalpopulation.gov.ng/",
-    tech: "Next Js",
-    path: "npc",
-  },
-  {
     title: "BaseMint",
     bImg: BaseMint,
     url: "https://baseminty.com/",
     tech: "Next JS",
     path: "basemint",
   },
-
+  {
+    title: "National Population Commission (NPC)",
+    bImg: npc,
+    url: "https://nationalpopulation.gov.ng/",
+    tech: "Next Js",
+    path: "npc",
+  },
   {
     title: "TrocToWork",
     bImg: ttw,
