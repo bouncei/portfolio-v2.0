@@ -71,7 +71,7 @@ const dummyData = [
       "Firebase",
       "Cloudinary",
     ],
-    Img: npc,
+    Img: ttw,
   },
   {
     id: "npc",
