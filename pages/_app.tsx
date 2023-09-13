@@ -21,12 +21,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router]);
   return (
     <>
-      <LoadingScreen loading={loading} />
-      <>
-        <Header />
-
+      <Header />
+      {loading ? (
+        <LoadingScreen loading={loading} />
+      ) : (
         <Component {...pageProps} />
-      </>
+      )}
     </>
   );
 }

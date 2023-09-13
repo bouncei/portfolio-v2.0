@@ -64,6 +64,7 @@ const dummyData = [
       "Next Js",
       "Tailswind CSS",
       "Sanity.io",
+      "GraphQL",
       "Stripe",
       "SendGrid",
       "MongoDB",
