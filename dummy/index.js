@@ -9,13 +9,12 @@ const dummyData = [
   {
     id: "basemint",
     name: "Base Mint",
-
     stack: ["Next Js", "Tailswind CSS", "Sanity.io", "Solidity"],
     overwiew:
       "A Web3.0 Block-chain application to discover, collect, and sell extraordinary NFTs. The Decentralized application was built on the Ethereum Blockchain with Nextjs, and Smart contracts written in Solidity.",
 
     repo: "https://github.com/bouncei/b-blockchain-nft",
-    demo: "https://baseminty.com/",
+    demo: "https://b-blockchain-nft-bouncei.vercel.app/",
     technologies: [
       "Next Js",
       "Tailswind CSS",
@@ -95,6 +94,8 @@ const dummyData = [
     id: "coingecko",
     name: "Coingecko Bot",
     stack: ["Python(Flask)", "SQL"],
+    demo: "https://t.me/CG_fastest_alerts",
+    repo: "https://github.com/bouncei/coingecko-listing-bot",
     overwiew:
       "A telegram bot for providing price signals for the latest crypto coins listed in Coingecko.",
     technologies: [

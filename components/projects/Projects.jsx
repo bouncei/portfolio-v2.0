@@ -11,7 +11,7 @@ const dummy = [
   {
     title: "BaseMint",
     bImg: BaseMint,
-    url: "https://baseminty.com/",
+    url: "https://b-blockchain-nft-bouncei.vercel.app/",
     tech: "Next JS",
     path: "basemint",
   },

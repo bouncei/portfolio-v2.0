@@ -66,11 +66,13 @@ const Project = ({ name }) => {
                 </a>
               )}
 
-              <a href={found?.demo} target="_blank" rel="noreferrer">
-                <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858] text-sm md:text-base 2xl:text-lg  cursor-pointer  hover:opacity-70">
-                  <BsLink45Deg /> <p>Demo</p>
-                </button>
-              </a>
+              {found?.demo && (
+                <a href={found?.demo} target="_blank" rel="noreferrer">
+                  <button className="px-4 py-1 mt-4 font-medium flex items-center gap-2 rounded-lg bg-[#fb5858] text-sm md:text-base 2xl:text-lg  cursor-pointer  hover:opacity-70">
+                    <BsLink45Deg /> <p>Demo</p>
+                  </button>
+                </a>
+              )}
             </div>
           </div>
           <div className="col-span-4 md:col-span-1 rounded-xl py-4">
