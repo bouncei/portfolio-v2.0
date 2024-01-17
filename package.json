@@ -10,10 +10,12 @@
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.1",
     "framer-motion": "^6.5.1",
+    "lottie-web": "^5.12.2",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
+    "react-scroll-up": "^1.4.0",
     "react-tsparticles": "^2.2.4",
     "recoil": "^0.7.5",
     "styled-components": "^5.3.6"

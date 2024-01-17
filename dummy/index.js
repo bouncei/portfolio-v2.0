@@ -3,7 +3,6 @@ import npc from "../public/assets/projects/npc.jpg";
 import BaseMint from "../public/assets/projects/BaseMint.png";
 import coingecko from "../public/assets/projects/coingecko.png";
 import ttw from "../public/assets/projects/ttw.png";
-import def from "../public/logo.png";
 
 const dummyData = [
   {

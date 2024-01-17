@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import Head from "next/head";
-import Image from "next/image";
-
 // PAGE COMPONENTS
-import { Hero, Header, About, Projects, Skills, Reviews } from "../components";
+import { Hero, About, Projects, Skills, Contact } from "../components";
+import ScrollToTop from "react-scroll-up";
+import { PiArrowFatLinesUpFill } from "react-icons/pi";
 
 const Home = () => {
   return (
@@ -17,12 +18,21 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
-        {/* 
-        <Reviews />
-       */}
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t"></footer>
+      <footer className="w-full  border-t py-6">
+        <Contact />
+      </footer>
+
+      <ScrollToTop duration={0.1} showUnder={160}>
+        <span>
+          <PiArrowFatLinesUpFill
+            size={40}
+            color="#fb5858"
+            className=" hover:scale-110 duration-300 ease-in"
+          />
+        </span>
+      </ScrollToTop>
     </div>
   );
 };

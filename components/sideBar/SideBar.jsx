@@ -1,12 +1,11 @@
 import React from "react";
 import applogo from "../../public/assets/logo.png";
 import Image from "next/image";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
 import { Box, Stack, Paper } from "@mui/material";
+import { FiInstagram } from "react-icons/fi";
 
 const SideBar = (anchor) => {
   const [state, setState] = React.useState({
@@ -30,9 +29,6 @@ const SideBar = (anchor) => {
       sx={{
         width: { xs: 200, sm: 300, md: 400 },
         height: "100vh",
-        // backgroundColor: "#faf8f8",
-        // color: "white",
-        // height: "100%",
       }}
       className="filter flex-col"
       role="presentation"
@@ -96,6 +92,15 @@ const SideBar = (anchor) => {
         <a href="https://github.com/bouncei" target="_blank" rel="noreferrer">
           <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
             <FaGithub />
+          </div>
+        </a>
+        <a
+          href="https://www.instagram.com/bouncey__/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <FiInstagram />
           </div>
         </a>
         <a

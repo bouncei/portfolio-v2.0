@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
 import Link from "next/link";
 import ParticlesBg from "../particlesBg/ParticlesBg";
 
@@ -21,12 +22,12 @@ const Hero = () => {
       link: "https://twitter.com/InyangJoshua8",
     },
     {
-      icon: <AiOutlineMail />,
-      link: "/#contact",
+      icon: <FiInstagram />,
+      link: "https://www.instagram.com/bouncey__/",
     },
     {
-      icon: <BsFillPersonLinesFill />,
-      link: "/resume",
+      icon: <AiOutlineMail />,
+      link: "mailto:joshuainyang255@gmail.com",
     },
   ];
   return (
@@ -53,10 +54,10 @@ const Hero = () => {
               <Link
                 key={index}
                 href={item.link}
-                target="_blank"
-                rel="noreferrer"
+                target={"_blank"}
+                rel={"noreferrer"}
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6 cursor-pointer hover:scale-105 md:hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-4 text-lg md:p-5 cursor-pointer hover:scale-105 md:hover:scale-110 ease-in duration-300">
                   {item.icon}
                 </div>
               </Link>

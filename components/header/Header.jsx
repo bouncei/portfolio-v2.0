@@ -15,7 +15,6 @@ import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 const Header = () => {
   const [sideMenu, setSideMenu] = useState(false);
   const [navBg] = useState("#faf8f8");
-  const [linkColor, setLinkColor] = useState("#1f2937");
   const [shadow, setShadow] = useState(false);
   const [state, setState] = React.useState({
     left: false,
@@ -32,10 +31,6 @@ const Header = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
-  // const { colorMode, toggleColorMode } = useColorMode();
-
-  // const { isOpen, onOpen, onClose } = useDisclosure();
-  // const btnRef = React.useRef();
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -48,7 +43,7 @@ const Header = () => {
     setState({ ...state, [anchor]: open });
   };
 
-  let navNames = ["Home", "About", "Skills", "Projects", "Contact"];
+  let navNames = ["Home", "About", "Skills", "Projects", "Contact", "Resume"];
 
   return (
     <div

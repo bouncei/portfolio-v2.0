@@ -5,7 +5,6 @@ import BaseMint from "../../public/assets/projects/BaseMint.png";
 import coingecko from "../../public/assets/projects/coingecko.png";
 import ttw from "../../public/assets/projects/ttw.png";
 import npc from "../../public/assets/projects/npc.jpg";
-import def from "../../public/logo.png";
 
 const dummy = [
   {
@@ -57,6 +56,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 place-self-center gap-8">
           {dummy.map((item, index) => (
             <ProjectItem
+              key={index}
               title={item.title}
               backgroundImg={item.bImg}
               projectUrl={item.url}
