@@ -103,15 +103,6 @@ const SideBar = (anchor) => {
             <FiInstagram />
           </div>
         </a>
-        <a
-          href="https://twitter.com/InyangJoshua8"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="rounded-full shadow-lg shadow-gray-400 p-4 md:p-6  cursor-pointer hover:scale-110 ease-in duration-300">
-            <FaTwitter />
-          </div>
-        </a>
       </div>
 
       <a
