@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { Box, Stack, Paper } from "@mui/material";
 import { FiInstagram } from "react-icons/fi";
+import ActiveLink from "../element/ActiveLinks";
 
 const SideBar = (anchor) => {
   const [state, setState] = React.useState({
@@ -22,7 +23,7 @@ const SideBar = (anchor) => {
 
     setState({ ...state, [anchor]: open });
   };
-  let navNames = ["Home", "About", "Skills", "Projects", "Contacts"];
+  let navNames = ["Home", "About", "Skills", "Projects", "Resume"];
 
   return (
     <Box
@@ -67,13 +68,18 @@ const SideBar = (anchor) => {
               key={index}
               className="text-base md:text-lg uppercase hover:border-b"
             >
-              <Link
-                href={`/#${
-                  item.toLowerCase() === "home" ? "" : item.toLowerCase()
-                }`}
+              <ActiveLink
+                href={
+                  item.toLowerCase() === "resume"
+                    ? "/assets/resume/JoshuaInyang_Resume-2024.pdf"
+                    : `/#${
+                        item.toLowerCase() === "home" ? "" : item.toLowerCase()
+                      }`
+                }
+                item={item}
               >
                 {item}
-              </Link>
+              </ActiveLink>
             </li>
           ))}
         </ul>

@@ -24,7 +24,7 @@ const Home = () => {
         <Contact />
       </footer>
 
-      <ScrollToTop duration={0.1} showUnder={160}>
+      {/* <ScrollToTop duration={0.1} showUnder={160}>
         <span>
           <PiArrowFatLinesUpFill
             size={40}
@@ -32,7 +32,7 @@ const Home = () => {
             className=" hover:scale-110 duration-300 ease-in"
           />
         </span>
-      </ScrollToTop>
+      </ScrollToTop> */}
     </div>
   );
 };

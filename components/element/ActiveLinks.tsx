@@ -12,7 +12,13 @@ function ActiveLink({ children, href, item }: LinkProps): JSX.Element {
 
   const handleClick = (e: any) => {
     e.preventDefault();
-    router.push(href);
+
+    if (href === "/assets/resume/JoshuaInyang_Resume-2024.pdf") {
+      // Open the link in a new tab
+      window.open(href, "_blank");
+    } else {
+      router.push(href);
+    }
   };
 
   return (

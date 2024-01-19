@@ -78,9 +78,15 @@ const Header = () => {
                 className="ml-10 text-sm uppercase hover:border-b"
               >
                 <ActiveLink
-                  href={`/#${
-                    item.toLowerCase() === "home" ? "" : item.toLowerCase()
-                  }`}
+                  href={
+                    item.toLowerCase() === "resume"
+                      ? "/assets/resume/JoshuaInyang_Resume-2024.pdf"
+                      : `/#${
+                          item.toLowerCase() === "home"
+                            ? ""
+                            : item.toLowerCase()
+                        }`
+                  }
                   item={item}
                 >
                   {item}
