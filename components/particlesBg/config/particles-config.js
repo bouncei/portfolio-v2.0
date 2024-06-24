@@ -7,7 +7,7 @@ const particlesConfig = {
     image: "",
     position: "",
     repeat: "",
-    size: "",
+    size: "lg",
     opacity: 1,
   },
   backgroundMask: {
