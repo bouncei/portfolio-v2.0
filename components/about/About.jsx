@@ -26,7 +26,7 @@ const About = () => {
               applications to contributing to projects.
             </p>
             <p className="py-2 text-gray-600 text-sm md:text-base 2xl:text-lg">
-              Over <strong>3 years+</strong> analyzing user needs and developing
+              Over <strong>4 years+</strong> analyzing user needs and developing
               software to precisely meet diverse needs.
             </p>
 

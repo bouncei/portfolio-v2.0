@@ -1,27 +1,39 @@
-# Next.js + Tailwind CSS Example
+# Personal Portfolio
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Welcome to my personal portfolio! I am a passionate and dedicated Software Engineer with a strong foundation in various programming languages, frameworks, and technologies. I thrive on solving complex problems and continuously learning to stay at the forefront of the ever-evolving tech landscape.
 
-## Deploy your own
+## Table of Contents
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- [About Me](#about-me)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Experience](#experience)
+- [Contact](#education)
+- [Resume](#certifications)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## About Me
 
-## How to use
+Innovative and technically-astute Software Engineer well-versed in analyzing user needs and developing software to precisely meet diverse needs. Fluent in HTML/CSS, Python, JavaScript, and Solidity with demonstrated mastery in these programming languages and proactively keeps up with industry trends. Driven to wear many programming hats with expertise in creating everything from new applications to contributing to projects.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Skills
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Programming Languages
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+- Python
+- JavaScript
+- TypeScript
+- C#
+- Solidity
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Contact
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Feel free to reach out to me via the following platforms:
+
+- **Email:** [joshuainyang255@gmail.com]
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/joshua-inyang-2753841b7/)
+- **GitHub:** [Your GitHub Profile](https://github.com/bouncei)
+- **Portfolio Website:** [[bouncei.vercel.app](https://bouncei.vercel.app/)]
+
+---
+
+Thank you for visiting my portfolio. I look forward to connecting and collaborating on exciting projects!
