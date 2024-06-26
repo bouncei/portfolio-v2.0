@@ -53,7 +53,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 place-self-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center  gap-8">
           {dummy.map((item, index) => (
             <ProjectItem
               key={index}
