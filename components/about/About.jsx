@@ -18,12 +18,12 @@ const About = () => {
             <h2 className="py-4">Who I Am</h2>
             <p className="py-2 text-gray-600 text-sm md:text-base 2xl:text-lg">
               Innovative and technically-astute Software Engineer well-versed in
-              analyzing user needs and developing software to precisely meet
-              diverse needs. Fluent in HTML/CSS, Python, JavaScript, and
+              analyzing user needs and developing software to meet precisely
+              diverse needs. Fluent in HTML/CSS, Python, TypeScript, and
               Solidity with demonstrated mastery in these programming languages
               and proactively keeps up with industry trends. Driven to wear many
               programming hats with expertise in creating everything from new
-              applications to contributing to projects.
+              applications to contribute to projects.
             </p>
             <p className="py-2 text-gray-600 text-sm md:text-base 2xl:text-lg">
               Over <strong>4 years+</strong> analyzing user needs and developing
