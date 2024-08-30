@@ -3,8 +3,21 @@ import npc from "../public/assets/projects/npc.jpg";
 import BaseMint from "../public/assets/projects/BaseMint.png";
 import coingecko from "../public/assets/projects/coingecko.png";
 import ttw from "../public/assets/projects/ttw.png";
+import yarn from "../public/assets/projects/yarn.png";
 
 const dummyData = [
+  {
+    id: "yarn",
+    name: "Music Yarn",
+    stack: ["Next Js", "React Native", "Supabase", "Tailswind CSS"],
+    overwiew:
+      "Yarn is a music application designed to revolutionize fan engagement and simplify artist discovery. By integrating hierarchical forum-style discussions and robust artist profiles, Yarn connects fans not only with their favorite artists & songs but also with one another, fostering a vibrant community. ",
+
+    repo: "https://github.com/bouncei/yarn-web",
+    demo: "https://musicyarns.com",
+    technologies: ["Next Js", "React Native", "Supabase", "Tailswind CSS"],
+    Img: yarn,
+  },
   {
     id: "basemint",
     name: "Base Mint",

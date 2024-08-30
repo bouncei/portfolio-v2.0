@@ -5,8 +5,16 @@ import BaseMint from "../../public/assets/projects/BaseMint.png";
 import coingecko from "../../public/assets/projects/coingecko.png";
 import ttw from "../../public/assets/projects/ttw.png";
 import npc from "../../public/assets/projects/npc.jpg";
+import yarn from "../../public/assets/projects/yarn.png";
 
 const dummy = [
+  {
+    title: "Music Yarn (WEB & MOBILE)",
+    bImg: yarn,
+    url: "https://musicyarns.com/",
+    tech: "Next JS",
+    path: "yarn",
+  },
   {
     title: "BaseMint",
     bImg: BaseMint,
