@@ -6,14 +6,22 @@ import coingecko from "../../public/assets/projects/coingecko.png";
 import ttw from "../../public/assets/projects/ttw.png";
 import npc from "../../public/assets/projects/npc.jpg";
 import yarn from "../../public/assets/projects/yarn.png";
+import leaftree from "../../public/assets/projects/leaftree.png";
 
 const dummy = [
   {
     title: "Music Yarn (WEB & MOBILE)",
     bImg: yarn,
     url: "https://musicyarns.com/",
-    tech: "Next JS",
+    tech: "Next JS & React Native",
     path: "yarn",
+  },
+  {
+    title: "LeafTree",
+    bImg: leaftree,
+    url: "https://water-tree.vercel.app/",
+    tech: "Next JS",
+    path: "leaftree",
   },
   {
     title: "BaseMint",

@@ -4,12 +4,19 @@ import BaseMint from "../public/assets/projects/BaseMint.png";
 import coingecko from "../public/assets/projects/coingecko.png";
 import ttw from "../public/assets/projects/ttw.png";
 import yarn from "../public/assets/projects/yarn.png";
+import leaftree from "../public/assets/projects/leaftree.png";
 
 const dummyData = [
   {
     id: "yarn",
     name: "Music Yarn",
-    stack: ["Next Js", "React Native", "Supabase", "Tailswind CSS"],
+    stack: [
+      "Next Js",
+      "TypeScript",
+      "React Native",
+      "Supabase",
+      "Tailswind CSS",
+    ],
     overwiew:
       "Yarn is a music application designed to revolutionize fan engagement and simplify artist discovery. By integrating hierarchical forum-style discussions and robust artist profiles, Yarn connects fans not only with their favorite artists & songs but also with one another, fostering a vibrant community. ",
 
@@ -18,6 +25,25 @@ const dummyData = [
     technologies: ["Next Js", "React Native", "Supabase", "Tailswind CSS"],
     Img: yarn,
   },
+  {
+    id: "leaftree",
+    name: "LeafTree",
+    stack: ["Next Js", "TypeScript", "Tailswind CSS", "Sanity.io", "Framer"],
+    overwiew:
+      "LeafTree curate ventures based on their: Purpose, Scalability & Sustainability leading to the development of products that stimulate Well Being. ",
+
+    repo: "https://github.com/bouncei/water-tree",
+    demo: "https://water-tree.vercel.app",
+    technologies: [
+      "Next Js",
+      "TypeScript",
+      "Tailswind CSS",
+      "Sanity.io",
+      "Framer",
+    ],
+    Img: leaftree,
+  },
+
   {
     id: "basemint",
     name: "Base Mint",
@@ -66,7 +92,7 @@ const dummyData = [
   {
     id: "ttw",
     name: "Troc To Work",
-    stack: ["Next Js", "Tailswind CSS", "MongoDB"],
+    stack: ["Next Js", "TypeScript", "Tailswind CSS", "MongoDB"],
     overwiew:
       "TrocToWork is a user-friendly platform that facilitates the connection between companies that have goods or skills to share. With TrocToWork, the exchange of goods and services can strengthen ties in the community. By creating this platform, the goal was to contribute to the life of professional community, and to have a positive impact to consumers ",
 
