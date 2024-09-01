@@ -66,30 +66,6 @@ const dummyData = [
   },
 
   {
-    id: "polygon",
-    name: "Polygon Dapp",
-    stack: ["Next Js", "Tailswind CSS", "Solidity"],
-    overwiew:
-      "A Web3.0 Block-chain application to create, buy and sell extraordinary NFTs. The Decentralized application was built on the Polygon Chain with Nextjs, and Smart contracts written in Solidity.",
-
-    repo: "https://github.com/bouncei/polygon-dApp",
-    demo: "https://polygon-d-2u4ds5k59-bouncei.vercel.app/",
-    technologies: [
-      "Next Js",
-      "Tailswind CSS",
-      "Polygon",
-      "Infura IPFS",
-      "Solidity",
-      "Hadhat",
-      "MATIC",
-      "Metamask",
-      "Wallet Connect",
-      "Unstoppable Domain",
-    ],
-    Img: polygon,
-  },
-
-  {
     id: "ttw",
     name: "Troc To Work",
     stack: ["Next Js", "TypeScript", "Tailswind CSS", "MongoDB"],

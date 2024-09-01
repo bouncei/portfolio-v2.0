@@ -44,13 +44,6 @@ const dummy = [
     tech: "Next Js",
     path: "ttw",
   },
-  {
-    title: "Polygon Dapp",
-    bImg: polygon,
-    url: "https://polygon-d-ise7n2ukk-bouncei.vercel.app/",
-    tech: "Next JS",
-    path: "polygon",
-  },
 
   {
     title: "Coingecko Bot",
