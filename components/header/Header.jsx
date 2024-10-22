@@ -75,7 +75,7 @@ const Header = () => {
             {navNames.map((item, index) => (
               <li
                 key={index}
-                className="ml-10 text-sm uppercase hover:border-b"
+                className="ml-10 text-sm uppercase hover:border-b hover:border-b-[#fb5858] transition ease-in duration-200 hover:text-[#fb5858]"
               >
                 <ActiveLink
                   href={

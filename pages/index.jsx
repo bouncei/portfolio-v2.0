@@ -10,6 +10,11 @@ const Home = () => {
     <div className="dark">
       <Head>
         <title>Joshua Emmanuel Inyang</title>
+        <meta
+          name="description"
+          content="Josh is an enthusiastic Software Engineer with a demonstrated
+            history of working in the market research industry. "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

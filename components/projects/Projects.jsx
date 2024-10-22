@@ -7,6 +7,7 @@ import ttw from "../../public/assets/projects/ttw.png";
 import npc from "../../public/assets/projects/npc.jpg";
 import yarn from "../../public/assets/projects/yarn.png";
 import leaftree from "../../public/assets/projects/leaftree.png";
+import fusionAI from "../../public/assets/projects/fusionAI.png";
 
 const dummy = [
   {
@@ -15,6 +16,13 @@ const dummy = [
     url: "https://musicyarns.com/",
     tech: "Next JS & React Native",
     path: "yarn",
+  },
+  {
+    title: "FusionAI",
+    bImg: fusionAI,
+    url: "https://fusion-ai-iota.vercel.app/",
+    tech: "Next JS",
+    path: "fusion-ai",
   },
   {
     title: "LeafTree",

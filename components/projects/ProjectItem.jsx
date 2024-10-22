@@ -21,22 +21,23 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl, path }) => {
           </h3>
           <p className="pb-4 pt-2 text-white text-center">{tech}</p>
           <div className="flex justify-center items-center space-x-3">
-            <div>
-              <p
-                className="text-center py-3 rounded-lg bg-[#fb5858] text-gray-700 font-bold text-lg cursor-pointer px-6 hover:opacity-70"
-                onClick={() => {
-                  Router.push({
-                    pathname: `/project/${path}`,
-                  });
-                }}
-              >
-                <BsEye />
-              </p>
+            <div
+              className="text-center py-2 rounded-lg bg-[#fb5858] text-white font-bold text-lg cursor-pointer px-4 hover:opacity-70"
+              onClick={() => {
+                Router.push({
+                  pathname: `/project/${path}`,
+                });
+              }}
+            >
+              <BsEye size={25} />
             </div>
-            <a href={projectUrl} target="_blank" rel="noreferrer">
-              <p className="text-center py-3 rounded-lg bg-[#fb5858] text-gray-700 font-bold text-lg cursor-pointer px-6 hover:opacity-70">
-                <BsLink45Deg />
-              </p>
+            <a
+              href={projectUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-center py-2 rounded-lg bg-[#fb5858] text-white font-bold text-lg cursor-pointer px-4 hover:opacity-70"
+            >
+              <BsLink45Deg size={25} />
             </a>
           </div>
         </div>

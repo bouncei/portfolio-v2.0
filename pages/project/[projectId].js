@@ -17,6 +17,8 @@ import Head from "next/head";
 const Project = ({ name }) => {
   const found = dummyData.find((element) => element.id === name.toLowerCase());
 
+  console.log("project", found);
+
   return (
     <div>
       <Head>

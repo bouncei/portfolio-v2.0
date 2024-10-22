@@ -5,6 +5,7 @@ import coingecko from "../public/assets/projects/coingecko.png";
 import ttw from "../public/assets/projects/ttw.png";
 import yarn from "../public/assets/projects/yarn.png";
 import leaftree from "../public/assets/projects/leaftree.png";
+import fusionAI from "../public/assets/projects/fusionAI.png";
 
 const dummyData = [
   {
@@ -24,6 +25,48 @@ const dummyData = [
     demo: "https://musicyarns.com",
     technologies: ["Next Js", "React Native", "Supabase", "Tailswind CSS"],
     Img: yarn,
+  },
+  {
+    id: "leaftree",
+    name: "LeafTree",
+    stack: ["Next Js", "TypeScript", "Tailswind CSS", "Sanity.io", "Framer"],
+    overwiew:
+      "LeafTree curate ventures based on their: Purpose, Scalability & Sustainability leading to the development of products that stimulate Well Being. ",
+
+    repo: "https://github.com/bouncei/water-tree",
+    demo: "https://water-tree.vercel.app",
+    technologies: [
+      "Next Js",
+      "TypeScript",
+      "Tailswind CSS",
+      "Sanity.io",
+      "Framer",
+    ],
+    Img: leaftree,
+  },
+  {
+    id: "fusion-ai",
+    name: "FusionAI",
+    technologies: [
+      "OpenAI",
+      "Replicate",
+      "Next Js",
+      "TypeScript",
+      "Tailswind CSS",
+      "Clerk",
+      "Stripe",
+      "Zustand",
+      "Framer",
+      "Prisma ORM",
+      "MongoDB",
+    ],
+    overwiew:
+      "Yarn is a music application designed to revolutionize fan engagement and simplify artist discovery. By integrating hierarchical forum-style discussions and robust artist profiles, Yarn connects fans not only with their favorite artists & songs but also with one another, fostering a vibrant community. ",
+
+    repo: "https://github.com/bouncei/fusion-ai",
+    demo: "https://fusion-ai-iota.vercel.app/",
+    stack: ["Next Js", "TypeScript", "MongoDB", "Tailswind CSS", "Zustand"],
+    Img: fusionAI,
   },
   {
     id: "leaftree",

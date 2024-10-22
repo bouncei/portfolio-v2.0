@@ -26,8 +26,9 @@ const About = () => {
               applications to contribute to projects.
             </p>
             <p className="py-2 text-gray-600 text-sm md:text-base 2xl:text-lg">
-              Over <strong>4 years+</strong> analyzing user needs and developing
-              software to precisely meet diverse needs.
+              Over <strong className="text-[#fb5858]">5 years+</strong>{" "}
+              analyzing user needs and developing software to precisely meet
+              diverse needs.
             </p>
 
             <Link href="/#projects">
