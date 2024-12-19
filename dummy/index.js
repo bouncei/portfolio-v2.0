@@ -61,7 +61,7 @@ const dummyData = [
       "MongoDB",
     ],
     overwiew:
-      "Yarn is a music application designed to revolutionize fan engagement and simplify artist discovery. By integrating hierarchical forum-style discussions and robust artist profiles, Yarn connects fans not only with their favorite artists & songs but also with one another, fostering a vibrant community. ",
+      "The ultimate AI-powered platform for all your creative needs. Whether it's generating stunning images, writing code, producing videos, composing music, or engaging in meaningful conversations, FusionAI has got you covered.",
 
     repo: "https://github.com/bouncei/fusion-ai",
     demo: "https://fusion-ai-iota.vercel.app/",
